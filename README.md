@@ -20,17 +20,29 @@ Configurations
 4.	Click the menu icon in the upper-right corner of the workspace tile, and then select View details.
 5.	In the application folder, copy the .env.example file and create a file called .env
 6.	cp .env.example .env
-7.	Open the .env file and add the service credentials that you obtained in the previous step. The Watson SDK automaticaly locates the correct enviromental variables for either username, password, and url or the apikey and url credentials found in the .env file.
+7.	Open the .env file and add the service credentials that you obtained in the previous step. 
+
+The Watson SDK automaticaly locates the correct enviromental variables for either username, password, and url or the apikey and url credentials found in the .env file.
+
 Example .env file that configures the apikey and url for a Watson Assistant service instance hosted in the US East region:
+
 ASSISTANT_IAM_APIKEY= ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
+
 ASSISTANT_URL= ://gateway.watsonplatform.net/assistant/api
+
 1.	If your service instance uses username and password credentials, add the ASSISTANT_USERNAME and ASSISTANT_PASSWORD variables to the .env file.
+
 Example .env file that configures the username, password, and url for a Watson Assistant service instance hosted in the US South region:
+
 ASSISTANT_USERNAME=apikey
+
 ASSISTANT_PASSWORD=dtkuu77989gygkyyt6g
- ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
+
+ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
+
 However, if your credentials contain an IAM API key, copy the apikey and url to the relevant fields.
-  {
+
+{
     "apikey": " ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu ",
     "iam_apikey_description": "Auto generated apikey during resource-key ...",
     "iam_apikey_name": "auto-generated-apikey-62b71334-3ae3-4609-be26-846fa59ece42",
@@ -38,8 +50,11 @@ However, if your credentials contain an IAM API key, copy the apikey and url to 
     "iam_serviceid_crn": "crn:v1:bluemix:public:iam...",
     "url": "https://gateway-syd.watsonplatform.net/assistant/api"
   }
+  
 ASSISTANT_IAM_APIKEY=ca2905e6 ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
+
 ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
+
 8.	Add the WORKSPACE_ID to the previous properties
 9.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -58,6 +73,7 @@ Running locally
 Deploying Watson Application in AWS to make hybrid cloud
 -----------------------------------------------------------------------------------------------
 Prerequisites:
+
 1.	Sign up for an AWS Cloud Account.
 2.	Create an instance of the Amazon service and get your credentials: 
 1.	Go to the AWS sevices EC2 page in the AWS Cloud Services.
@@ -73,47 +89,17 @@ Prerequisites:
 11.	Copy the Public DNS and Public IP and store it for later use.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 Running the application in AWS cloud:
+
 In the terminal do the following:
+
 1.	Run command chmod 400 ./aws-keypair.pem (./aws-keypair.pem is the one which you download while creating the instance)
 2.	Run  comman ssh -i /aws-keypair.pem ubuntu@"public DNS" (paste the previously copied public DNS value in "public DNS" in your command).
 3.	Now you will enter into aws cloud.
 4.	Clone the project folder.
 5.	Inside the cloned project now copy the .env.example file to .env
-Example .env file that configures the username, password, and url for a Watson Assistant service instance hosted in the US South region:
-ASSISTANT_USERNAME=apikey
-ASSISTANT_PASSWORD=dtkuu77989gygkyyt6
- ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
-However, if your credentials contain an IAM API key, copy the apikey and url to the relevant fields.
-  {
-    "apikey": " ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu ",
-    "iam_apikey_description": "Auto generated apikey during resource-key ...",
-    "iam_apikey_name": "auto-generated-apikey-62b71334-3ae3-4609-be26-846fa59ece42",
-    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-    "iam_serviceid_crn": "crn:v1:bluemix:public:iam...",
-    "url": "https://gateway-syd.watsonplatform.net/assistant/api"
-  }
-ASSISTANT_IAM_APIKEY=ca2905e6 ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
-ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
-1.	Add the WORKSPACE_ID to the previous properties
-2.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
 
-Example: Example .env file that configures the username, password, and url for a Watson Assistant service instance hosted in the US South region:
-ASSISTANT_USERNAME=apikey
-ASSISTANT_PASSWORD=dtkuu77989gygkyyt6g
- ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
-However, if your credentials contain an IAM API key, copy the apikey and url to the relevant fields.
-  {
-    "apikey": " ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu ",
-    "iam_apikey_description": "Auto generated apikey during resource-key ...",
-    "iam_apikey_name": "auto-generated-apikey-62b71334-3ae3-4609-be26-846fa59ece42",
-    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-    "iam_serviceid_crn": "crn:v1:bluemix:public:iam...",
-    "url": "https://gateway-syd.watsonplatform.net/assistant/api"
-  }
-ASSISTANT_IAM_APIKEY=ca2905e6 ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
-ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
-Add the WORKSPACE_ID to the previous properties
-WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
+Follow the steps in #Configurations
+
 1.	Install Node.js
 2.	Install IBM Cloud CLI.
 3.	Install Docker
@@ -121,6 +107,7 @@ WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
 
 1.	Run npm install
 2.	Run npm start
+
 You can see that application is running on port 3000 
 
 1.	Under Network and Security go to Security Groups in AWS cloud 
@@ -130,7 +117,9 @@ You can see that application is running on port 3000
 3.	Under inbound click edit and click add rule set the type to Custom TCP Rule, port range( give ibm port number here i.e: 3000) 
 4.	Click Save 
 5.	Now with the public IP (previously copied information while creating an instance) of the instance in the aws cloud and port-number 3000 from ibm cloud check whether the hybrid cloud is deployed successfully
+
 Example: 100.26.189.253:3000
+
 You can see in the below screenshot that the application is running in hybrid cloud environment by combining ip address from AWS and port number from IBM Watson. 
 
 ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/awscloud_image.PNG)
@@ -140,11 +129,13 @@ You can see in the below screenshot that the application is running in hybrid cl
 How to containerize the application
 ------------------------------------------------------------------------------
 In the terminal navigate to the folder where you have your project folder
+
 1.	Create a docker file using nano dockerfile command
 2.	Create a docker-compose.yml file nano docker-compose.yml command
 3.	Make sure with the indentation.
 4.	Make sure that you have .env in your folder 
 5.	Run sudo docker-compose up 
+
 Wait until you see done on the command line and it starts running on the web 
 
 ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/started_running_in_localcloud.PNG)
@@ -155,7 +146,7 @@ Dockerfile
  
 Docker-compose.yml
  
- ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Docker-compose_image.PNG)
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Docker-compose_image.PNG)
  
 Deploying Application in Local Cloud Environment
 -----------------------------------------------------------------------
@@ -166,7 +157,7 @@ Deploying Application in Local Cloud Environment
 
 ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/started_running_in_localcloud.PNG)
  
- ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Localcloud_environment.JPG)
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Localcloud_environment.JPG)
  
  
 Navigate to the local project folder and make a .env file from .env.example
@@ -181,9 +172,14 @@ Inside the .env file give the credentials by following the steps in #configurati
 2.	Install IBM Cloud CLI.
 3.	Install Docker
 4.	Install Docker-Compose
+
 And now run sudo docker-compose up 
 
 ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Vagrant_3000.JPG)
+
+It runs on the your VM port which is in your vagrant file 
+
+Example: 192.168.33.10:3000
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 This application is taken from the other git project
