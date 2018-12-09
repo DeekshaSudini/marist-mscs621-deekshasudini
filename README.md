@@ -130,8 +130,8 @@ You can see in the below screenshot that the application is running in hybrid cl
 
 In the terminal navigate to the folder where you have your project folder
 
-1.	Create a docker file using nano dockerfile command
-2.	Create a docker-compose.yml file nano docker-compose.yml command
+1.	Create a docker file using "nano dockerfile" command
+2.	Create a docker-compose.yml file "nano docker-compose.yml" command
 3.	Make sure with the indentation.
 4.	Make sure that you have .env in your folder 
 5.	Run sudo docker-compose up 
