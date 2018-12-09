@@ -1,6 +1,6 @@
 BANKING ASSISTANT - WATSON ASSISTANT SAMPLE APPLICATION
 -----------------------------------------------------------------------------------------------
-Prerequisites
+## Prerequisites
 1.	Sign up for an IBM Cloud account.
 2.	Download the IBM Cloud CLI.
 3.	Create an instance of the Watson Assistant service and get your credentials: 
@@ -11,7 +11,7 @@ Prerequisites
 5.	Copy the apikey value, or copy the username and password values if your service instance doesn't provide an apikey.
 6.	Copy the url value.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-Configurations
+## Configurations
 
 1.	In your IBM Cloud console, open the Watson Assistant service instance
 2.	Click the Import workspace icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local copy of the app project:
@@ -58,7 +58,7 @@ ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 8.	Add the WORKSPACE_ID to the previous properties
 9.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Running locally
+# Running locally
 1.	Install the dependencies
 2.	npm install
 3.	Run the application
@@ -70,9 +70,9 @@ Running locally
 
 
 -----------------------------------------------------------------------------------------------
-Deploying Watson Application in AWS to make hybrid cloud
+# Deploying Watson Application in AWS to make hybrid cloud
 -----------------------------------------------------------------------------------------------
-Prerequisites:
+## Prerequisites:
 
 1.	Sign up for an AWS Cloud Account.
 2.	Create an instance of the Amazon service and get your credentials: 
@@ -88,7 +88,7 @@ Prerequisites:
 10.	And the Instance is created and then moves to running state
 11.	Copy the Public DNS and Public IP and store it for later use.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-Running the application in AWS cloud:
+## Running the application in AWS cloud:
 
 In the terminal do the following:
 
@@ -98,7 +98,7 @@ In the terminal do the following:
 4.	Clone the project folder.
 5.	Inside the cloned project now copy the .env.example file to .env
 
-Follow the steps in #Configurations
+Follow the steps in Configurations
 
 1.	Install Node.js
 2.	Install IBM Cloud CLI.
@@ -126,7 +126,7 @@ You can see in the below screenshot that the application is running in hybrid cl
 
  
 -------------------------------------------------------------------------------------
-How to containerize the application
+# How to containerize the application
 ------------------------------------------------------------------------------
 In the terminal navigate to the folder where you have your project folder
 
@@ -148,7 +148,7 @@ Docker-compose.yml
  
 ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Docker-compose_image.PNG)
  
-Deploying Application in Local Cloud Environment
+# Deploying Application in Local Cloud Environment
 -----------------------------------------------------------------------
 
 1.	Run Vagrant up
