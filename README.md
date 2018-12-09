@@ -7,7 +7,18 @@ This application is built on chatbot which is developed using a Watson Assistant
 
 > The application performs various tasks such as: Helps you choose the account type, Helps you with issues related to your account, Make appointment with manager etc 
 
+## Dependencies
 
+> IBM Cloud CLI
+> Node.js
+> IBM Cloud Account
+> AWS Account
+> Docker
+> Docker Compose
+> Virtual Box
+> Vagrant
+
+--------------------------------------------------------------------------
 ## Prerequisites
 1.	Sign up for an IBM Cloud account.
 2.	Download the IBM Cloud CLI.
@@ -42,11 +53,11 @@ ASSISTANT_URL= ://gateway.watsonplatform.net/assistant/api
 
 Example .env file that configures the username, password, and url for a Watson Assistant service instance hosted in the US South region:
 
-ASSISTANT_USERNAME=apikey
+> ASSISTANT_USERNAME=apikey
 
-ASSISTANT_PASSWORD=dtkuu77989gygkyyt6g
+> ASSISTANT_PASSWORD=dtkuu77989gygkyyt6g
 
-ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
+> ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
 
 However, if your credentials contain an IAM API key, copy the apikey and url to the relevant fields.
 
@@ -59,9 +70,9 @@ However, if your credentials contain an IAM API key, copy the apikey and url to 
     "url": "https://gateway-syd.watsonplatform.net/assistant/api"
   }
   
-ASSISTANT_IAM_APIKEY=ca2905e6 ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
+> ASSISTANT_IAM_APIKEY=ca2905e6 ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
 
-ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
+> ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 
 8.	Add the WORKSPACE_ID to the previous properties
 9.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
@@ -127,7 +138,7 @@ You can see that application is running on port 3000
 4.	Click Save 
 5.	Now with the public IP (previously copied information while creating an instance) of the instance in the aws cloud and port-number 3000 from ibm cloud check whether the hybrid cloud is deployed successfully
 
-Example: 100.26.189.253:3000
+> Example: 100.26.189.253:3000
 
 You can see in the below screenshot that the application is running in hybrid cloud environment by combining ip address from AWS and port number from IBM Watson. 
 
@@ -172,7 +183,8 @@ Docker-compose.yml
 Navigate to the local project folder and make a .env file from .env.example
 
 1.	Run cp  .env.example .env
-To open the .evn file
+
+> To open the .evn file
 2.	Run nano .env 
 
 Inside the .env file give the credentials by following the steps in #configurations
@@ -188,12 +200,12 @@ And now run sudo docker-compose up
 
 It runs on the your VM port which is in your vagrant file 
 
-Example: 192.168.33.10:3000
+> Example: 192.168.33.10:3000
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 This application is taken from the other git project
 --------------------------------------------------------------------------------------------
-How it differs from the actual project:
+How it differs from the original project:
 --------------------------------------------------------------------------------------------
 1.	This application is made hybrid by using services of both AWS and IBM cloud.
 2.	The application is containerized
