@@ -1,5 +1,13 @@
 BANKING ASSISTANT - WATSON ASSISTANT SAMPLE APPLICATION
 -----------------------------------------------------------------------------------------------
+This application serves as a Banking Assistant. It is a Simple application that demonstrates the Watson Assistant service in a chat.
+
+> This is an interactive application which helps user with mutiple tasks. It serves as a virtual agent.
+This application is built on chatbot which is developed using a Watson Assistant
+
+> The application performs various tasks such as: Helps you choose the account type, Helps you with issues related to your account, Make appointment with manager etc 
+
+
 ## Prerequisites
 1.	Sign up for an IBM Cloud account.
 2.	Download the IBM Cloud CLI.
