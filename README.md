@@ -7,16 +7,17 @@ This application is built on chatbot which is developed using a Watson Assistant
 
 > The application performs various tasks such as: Helps you choose the account type, Helps you with issues related to your account, Make appointment with manager etc 
 
+----------------------------------------------------------------
 ## Dependencies
 
-> IBM Cloud CLI
-> Node.js
-> IBM Cloud Account
-> AWS Account
-> Docker
-> Docker Compose
-> Virtual Box
-> Vagrant
+ 1. IBM Cloud CLI
+ 2. Node.js
+ 3. IBM Cloud Account
+ 4. AWS Account
+ 5. Docker
+ 6. Docker Compose
+ 7. Virtual Box
+ 8. Vagrant
 
 --------------------------------------------------------------------------
 ## Prerequisites
