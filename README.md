@@ -50,11 +50,10 @@ Running locally
 4.	npm start
 5.	View the application in a browser at localhost:3000
 
- ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+ ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/ibmcloud_deployment.JPG)
 
 
 
- 
 -----------------------------------------------------------------------------------------------
 Deploying Watson Application in AWS to make hybrid cloud
 -----------------------------------------------------------------------------------------------
@@ -82,7 +81,7 @@ In the terminal do the following:
 5.	Inside the cloned project now copy the .env.example file to .env
 Example .env file that configures the username, password, and url for a Watson Assistant service instance hosted in the US South region:
 ASSISTANT_USERNAME=apikey
-ASSISTANT_PASSWORD=dtkuu77989gygkyyt6g
+ASSISTANT_PASSWORD=dtkuu77989gygkyyt6
  ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
 However, if your credentials contain an IAM API key, copy the apikey and url to the relevant fields.
   {
@@ -126,12 +125,16 @@ You can see that application is running on port 3000
 
 1.	Under Network and Security go to Security Groups in AWS cloud 
 2.	Select a security group other than default
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/SecurityGroup_image.PNG)
  
 3.	Under inbound click edit and click add rule set the type to Custom TCP Rule, port range( give ibm port number here i.e: 3000) 
 4.	Click Save 
 5.	Now with the public IP (previously copied information while creating an instance) of the instance in the aws cloud and port-number 3000 from ibm cloud check whether the hybrid cloud is deployed successfully
 Example: 100.26.189.253:3000
 You can see in the below screenshot that the application is running in hybrid cloud environment by combining ip address from AWS and port number from IBM Watson. 
+
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/awscloud_image.PNG)
+
  
 -------------------------------------------------------------------------------------
 How to containerize the application
@@ -144,29 +147,44 @@ In the terminal navigate to the folder where you have your project folder
 5.	Run sudo docker-compose up 
 Wait until you see done on the command line and it starts running on the web 
 
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/started_running_in_localcloud.PNG)
 
-		Dockerfile
+Dockerfile
+
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/dockerfile_image.PNG)
  
-
 Docker-compose.yml
+ 
+ ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Docker-compose_image.PNG)
  
 Deploying Application in Local Cloud Environment
 -----------------------------------------------------------------------
 
 1.	Run Vagrant up
 2.	Run Vagrant ssh
+3.	Clone the project folder into your vagrant
+
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/started_running_in_localcloud.PNG)
+ 
+ ![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Localcloud_environment.JPG)
  
  
 Navigate to the local project folder and make a .env file from .env.example
+
 1.	Run cp  .env.example .env
 To open the .evn file
 2.	Run nano .env 
+
 Inside the .env file give the credentials by following the steps in #configurations
+
 1.	Install Node.js
 2.	Install IBM Cloud CLI.
 3.	Install Docker
 4.	Install Docker-Compose
 And now run sudo docker-compose up 
+
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/Vagrant_3000.JPG)
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 This application is taken from the other git project
 --------------------------------------------------------------------------------------------
