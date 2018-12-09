@@ -139,7 +139,7 @@ In the terminal navigate to the folder where you have your project folder
 
 Wait until you see done on the command line and it starts running on the web 
 
-![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/started_running_in_localcloud.PNG)
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/containerize.JPG)
 
 Dockerfile
 
