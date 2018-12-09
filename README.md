@@ -50,6 +50,8 @@ Running locally
 4.	npm start
 5.	View the application in a browser at localhost:3000
 
+ ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
 
 
  
