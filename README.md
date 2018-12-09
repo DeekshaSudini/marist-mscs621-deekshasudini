@@ -10,7 +10,7 @@ BANKING ASSISTANT - WATSON ASSISTANT SAMPLE APPLICATION
 4.	Click Show to view the service credentials.
 5.	Copy the apikey value, or copy the username and password values if your service instance doesn't provide an apikey.
 6.	Copy the url value.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 ## Configurations
 
 1.	In your IBM Cloud console, open the Watson Assistant service instance
@@ -57,7 +57,7 @@ ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 
 8.	Add the WORKSPACE_ID to the previous properties
 9.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 # Running locally
 1.	Install the dependencies
 2.	npm install
@@ -71,7 +71,7 @@ ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 
 -----------------------------------------------------------------------------------------------
 # Deploying Watson Application in AWS to make hybrid cloud
------------------------------------------------------------------------------------------------
+
 ## Prerequisites:
 
 1.	Sign up for an AWS Cloud Account.
@@ -87,7 +87,7 @@ ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 9.	Select a new key-pair and download the keypair immediately later this file won't be available and click create
 10.	And the Instance is created and then moves to running state
 11.	Copy the Public DNS and Public IP and store it for later use.
-----------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 ## Running the application in AWS cloud:
 
 In the terminal do the following:
@@ -127,7 +127,7 @@ You can see in the below screenshot that the application is running in hybrid cl
  
 -------------------------------------------------------------------------------------
 # How to containerize the application
-------------------------------------------------------------------------------
+
 In the terminal navigate to the folder where you have your project folder
 
 1.	Create a docker file using nano dockerfile command
@@ -181,7 +181,7 @@ It runs on the your VM port which is in your vagrant file
 
 Example: 192.168.33.10:3000
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
 This application is taken from the other git project
 --------------------------------------------------------------------------------------------
 How it differs from the actual project:
