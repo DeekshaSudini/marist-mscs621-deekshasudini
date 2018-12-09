@@ -58,7 +58,7 @@ ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 8.	Add the WORKSPACE_ID to the previous properties
 9.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
 ----------------------------------------------------------------------------------------------------------------------------------------
-# Running locally
+# Running locally in IBM Cloud
 1.	Install the dependencies
 2.	npm install
 3.	Run the application
