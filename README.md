@@ -7,7 +7,7 @@ This application is built on chatbot which is developed using a Watson Assistant
 
 > The application performs various tasks such as: Helps you choose the account type, Helps you with issues related to your account, Make appointment with manager etc 
 
-Click [here](https://google.com) to view a demo of the application
+Click [here](http://54.144.212.171:3000/) to view a demo of the application
 
 ----------------------------------------------------------------
 ## Dependencies
