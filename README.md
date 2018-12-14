@@ -7,7 +7,7 @@ This application is built on chatbot which is developed using a Watson Assistant
 
 > The application performs various tasks such as: Helps you choose the account type, Helps you with issues related to your account, Make appointment with manager etc 
 
-Click [here](http://54.144.212.171:3000/) to view a demo of the application
+## Click [here](http://54.144.212.171:3000/) to view a demo of the application
 
 ----------------------------------------------------------------
 ## Dependencies
@@ -55,6 +55,7 @@ ASSISTANT_URL= ://gateway.watsonplatform.net/assistant/api
 1.	If your service instance uses username and password credentials, add the ASSISTANT_USERNAME and ASSISTANT_PASSWORD variables to the .env file.
 
 Example .env file that configures the username, password, and url for a Watson Assistant service instance hosted in the US South region:
+> WORKSPACE_ID="your ibm workspace id"
 
 > ASSISTANT_USERNAME=apikey
 
@@ -62,23 +63,12 @@ Example .env file that configures the username, password, and url for a Watson A
 
 > ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
 
-However, if your credentials contain an IAM API key, copy the apikey and url to the relevant fields.
-
-{
-    "apikey": " ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu ",
-    "iam_apikey_description": "Auto generated apikey during resource-key ...",
-    "iam_apikey_name": "auto-generated-apikey-62b71334-3ae3-4609-be26-846fa59ece42",
-    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
-    "iam_serviceid_crn": "crn:v1:bluemix:public:iam...",
-    "url": "https://gateway-syd.watsonplatform.net/assistant/api"
-  }
+or
   
 > ASSISTANT_IAM_APIKEY=ca2905e6 ttMEkgoiN76NuhS_fyuy78jhhyhhgfyu
 
 > ASSISTANT_IAM_URL=https://gateway-syd.watsonplatform.net/assistant/api
 
-8.	Add the WORKSPACE_ID to the previous properties
-9.	WORKSPACE_ID=522be-0hjj-ab44-dec3-g1eab2ha73c68gu
 ----------------------------------------------------------------------------------------------------------------------------------------
 # Running locally in IBM Cloud
 
