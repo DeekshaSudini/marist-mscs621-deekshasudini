@@ -26,12 +26,13 @@ Click [here](http://54.144.212.171:3000/) to view a demo of the application
 1.	Sign up for an IBM Cloud account.
 2.	Download the IBM Cloud CLI.
 3.	Create an instance of the Watson Assistant service and get your credentials: 
-1.	Go to the Watson Assistant page in the IBM Cloud Catalog.
-2.	Log in to your IBM Cloud account.
-3.	Click Create.
-4.	Click Show to view the service credentials.
-5.	Copy the apikey value, or copy the username and password values if your service instance doesn't provide an apikey.
-6.	Copy the url value.
+4.	Go to the Watson Assistant page in the IBM Cloud Catalog.
+5.	Log in to your IBM Cloud account.
+6.	Click Create.
+7.	Click Show to view the service credentials.
+8.	Copy the apikey value, or copy the username and password values if your service instance doesn't provide an apikey.
+9.	Copy the url value.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 ## Configurations
 
