@@ -145,7 +145,7 @@ You can see that application is running on port 3000
 
 You can see in the below screenshot that the application is running in hybrid cloud environment by combining ip address from AWS and port number from IBM Watson. 
 
-![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/awscloud_image.PNG)
+![Alt text](https://github.com/DeekshaSudini/marist-mscs621-deekshasudini/blob/master/readme_images/AWScloud_deployment.JPG)
 
  
 -------------------------------------------------------------------------------------
