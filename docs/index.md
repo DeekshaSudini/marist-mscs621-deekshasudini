@@ -1,4 +1,5 @@
-##                                                 CLOUD COMPUTING PROJECT - Deeksha Sudini
+
+## <span style="color: #f03c15"> CLOUD COMPUTING PROJECT </span>
 
 
 
