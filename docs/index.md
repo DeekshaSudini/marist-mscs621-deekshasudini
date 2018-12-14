@@ -1,5 +1,5 @@
 
-## <span style="color: #f03c15"> CLOUD COMPUTING PROJECT </span>
+## <center><span style="color: #f03c15"> CLOUD COMPUTING PROJECT </span></center>
 
 
 
